@@ -5,8 +5,9 @@
 </ul>
 <hr>
 <ul>
-  <li *ngFor="let name of names">
-    <app-user-item></app-user-item>
+  <li *ngFor="let pinco of names">
+  <app-user-item [name]="pinco">
+    </app-user-item>
 </li>
 </ul>
 

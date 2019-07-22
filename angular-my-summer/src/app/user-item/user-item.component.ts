@@ -11,7 +11,6 @@ export class UserItemComponent implements OnInit {
 @Input() name: string;
 
   constructor() {
-    this.name = 'Felipe';
   }
 
   ngOnInit() {
