@@ -9,12 +9,18 @@ import { Article } from './article.model';
 export class ArticleComponent implements OnInit {
     @HostBinding('attr.class') cssClass = 'card';
 
- article:Article;
+ articles:Article[];
 
-  constructor() {
-     this.article = new Article('Angular 2','http://angular.io',10);
+     constructor(){
+    this.articles = [
+      new Article('Angular 2', 'http://angular.io', 3),
+      new Article('Fullstack', 'http://fullstack.io', 2),
+      new Article('Angular Homepage', 'http://angular.io', 1),
+    ];
   }
 
+  }
+/*
   voteUp() {
     this.article.voteUp();
     return false;
@@ -24,6 +30,7 @@ export class ArticleComponent implements OnInit {
     this.article.voteDown();
     return false;
   }
+*/
 
   ngOnInit() {
   }
