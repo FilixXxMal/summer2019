@@ -11,7 +11,7 @@ export class ArticleComponent implements OnInit {
   @Input() article: Article;
 
   constructor() {
-    this.article = new Article('Angular 2','http://angular.io',100);
+
   }
 
   voteUp(): Boolean {
