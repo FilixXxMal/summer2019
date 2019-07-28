@@ -15,6 +15,7 @@ export class Article {
 
 
 
+
   voteUp(): void {
     this.votes += 1;
   }
