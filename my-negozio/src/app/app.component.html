@@ -1,8 +1,7 @@
-hhjhjhjh
-
-<div class="inventory-app">
-  (Products will go here soon)
+<div class="my-negozio">
+  <product-list
+    [productList]="products"
+    (onProductSelected)="productWasSelected($event)">
+  </product-list>
 </div>
-
-
 

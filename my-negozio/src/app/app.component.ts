@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Product } from './product.model';
 
 @Component({
@@ -6,7 +6,7 @@ import { Product } from './product.model';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit  {
   products: Product[];
   conistructor() {
     this.products = [
@@ -34,4 +34,6 @@ export class AppComponent {
     console.log('Product clicked: ', product);
   }
 
+  ngOnInit() {
+  }
 }
