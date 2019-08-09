@@ -18,8 +18,14 @@ export class ProductListComponent implements OnInit {
     this.onProductSelected = new EventEmitter();
   }
 
+clicked(product: Product): void {
+    this.currentProduct = product;
+    this.onProductSelected.emit(product);
+  }
+
 
   ngOnInit() {
+
   }
 
 }
