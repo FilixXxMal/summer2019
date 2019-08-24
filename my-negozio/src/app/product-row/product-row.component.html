@@ -1,3 +1,17 @@
-<p>
-  {{product.name}}
-</p>
+<div class="border">
+  <div class="d-inline-block w-25  p-2 align-top">
+     <span>Immagine prodotto</span>
+      <!--<product-image [product]="product"></product-image>-->
+  </div>
+  <div class="d-inline-block w-50  p-2 align-top">
+    <h2>{{ product.name }}</h2>
+    <div class="text-muted">SKU #{{ product.sku }}</div>
+    <div class="text-info">Dipartimento prodotto</div>
+    <!--<product-department [product]="product"></product-department>-->
+  </div>
+  <div class="d-inline-block w-25  p-2 align-top text-right">
+    <span>Prezzo prodotto</span>
+    <!--<price-display [price]="product.price"></price-display>-->
+  </div>
+</div>
+
